@@ -16,7 +16,8 @@ header {
 	display: flex;
 	flex-wrap: wrap;
 	background-image: url(/images/space.png);
-	background-size: 100%;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
 	justify-content: center;
 	position: relative;
 	align-items: flex-start;
@@ -35,10 +36,10 @@ h1 {
 }
 .triangle {
 	opacity: 0.75;
-	height: 4%;
-	width: 4%;
+	height: 15px;
+	width: 15px;
 	position: absolute;
-	top: 25.5%;
+	top: 107px;
 	left: 40%;
 }
 
@@ -59,6 +60,10 @@ h1 {
 .slice-container {
 	display: flex;
 	justify-content: space-evenly;
+	flex-wrap: wrap;
+	background-color: rgba(0, 0, 0, 0.5);
+	background-size: 100%;
+	padding: 1rem;
 }
 
 .slices {
