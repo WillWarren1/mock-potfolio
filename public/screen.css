@@ -34,6 +34,13 @@ h1 {
 	font-size: 1.45rem;
 	padding: 0;
 }
+.textbubble {
+	background-color: rgba(255, 255, 255, 0.75);
+	border-radius: 3px;
+	margin: 5rem 1rem;
+	width: 56%;
+	height: 10%;
+}
 .triangle {
 	opacity: 0.75;
 	height: 15px;
@@ -43,13 +50,6 @@ h1 {
 	left: 40%;
 }
 
-.textbubble {
-	background-color: rgba(255, 255, 255, 0.75);
-	border-radius: 3px;
-	margin: 5rem 1rem;
-	width: 56%;
-	height: 10%;
-}
 .my-face {
 	width: 30%;
 	height: 30%;
@@ -72,6 +72,47 @@ h1 {
 	margin: 1rem 0.5rem;
 }
 
-.react {
+article {
+	display: flex;
+	align-items: flex-end;
+	flex-wrap: wrap;
+}
+
+#react {
 	background-image: url(/images/react.png);
+	display: flex;
+	justify-content: flex-end;
+	background-position-y: 25%;
+}
+#fizz {
+	background-image: url(/images/code.png);
+	display: flex;
+	justify-content: flex-end;
+}
+.react p {
+	margin: 1rem;
+}
+
+.posts {
+	background-color: rgb(255, 255, 255);
+	height: 20%;
+	display: flex;
+	flex-direction: column;
+}
+
+.posttitle {
+	margin: 1rem;
+	display: flex;
+	flex-direction: row;
+	align-items: baseline;
+}
+
+.posttitle p {
+	margin: 1rem;
+}
+
+.readmore {
+	background-color: rgb(20, 131, 210);
+	margin: -0.5rem 1rem 2rem 4rem;
+	border: none;
 }
