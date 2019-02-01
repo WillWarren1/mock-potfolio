@@ -1,7 +1,9 @@
 :root {
-	font: 12px / 1 Roboto;
+	font-size: 10px / 1 'Roboto';
 }
-
+* {
+	font-family: 'Roboto', sans-serif;
+}
 html {
 	height: 100%;
 }
@@ -9,7 +11,7 @@ html {
 body {
 	margin: 0;
 	min-height: 100%;
-	background-color: gray;
+	background-color: rgb(3, 16, 25);
 }
 
 header {
@@ -26,27 +28,27 @@ header {
 header p {
 	margin: 0.5rem 0rem;
 	padding: 0rem 0.5rem;
-	font-size: 1rem;
+	font-size: 0.85rem;
 }
 h1 {
 	margin: 0.5rem 0.5rem;
 	width: 100%;
-	font-size: 1.45rem;
+	font-size: 1rem;
 	padding: 0;
 }
 .textbubble {
 	background-color: rgba(255, 255, 255, 0.75);
 	border-radius: 3px;
-	margin: 5rem 1rem;
-	width: 56%;
-	height: 10%;
+	margin: 5rem 0.5rem;
+	width: 0.56;
+	height: 0.1;
 }
 .triangle {
 	opacity: 0.75;
 	height: 15px;
 	width: 15px;
 	position: absolute;
-	top: 107px;
+	top: 139px;
 	left: 40%;
 }
 
@@ -74,7 +76,7 @@ h1 {
 
 article {
 	display: flex;
-	align-items: flex-end;
+	/* align-items: flex-end; */
 	flex-wrap: wrap;
 }
 
@@ -82,7 +84,10 @@ article {
 	background-image: url(/images/react.png);
 	display: flex;
 	justify-content: flex-end;
-	background-position-y: 25%;
+	align-content: flex-end;
+	background-position-y: 73%;
+	background-position-x: 45%;
+	margin: 1rem;
 }
 #fizz {
 	background-image: url(/images/code.png);
@@ -95,9 +100,16 @@ article {
 
 .posts {
 	background-color: rgb(255, 255, 255);
-	height: 20%;
+	width: 100%;
+	height: 10rem;
 	display: flex;
 	flex-direction: column;
+	margin-top: 4rem;
+	margin-bottom: -0.5rem;
+}
+
+h2 {
+	margin: 0;
 }
 
 .posttitle {
@@ -108,11 +120,11 @@ article {
 }
 
 .posttitle p {
-	margin: 1rem;
+	margin: 0.5rem;
 }
 
 .readmore {
 	background-color: rgb(20, 131, 210);
-	margin: -0.5rem 1rem 2rem 4rem;
+	margin: -0.5rem 1rem -1rem 4rem;
 	border: none;
 }
