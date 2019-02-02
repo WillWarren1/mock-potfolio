@@ -49,7 +49,8 @@ h1 {
 	width: 15px;
 	position: absolute;
 	top: 107px;
-	left: 42%;
+	margin-left: -1.5rem;
+	/* left: 42%; */
 }
 
 .my-face {
@@ -212,4 +213,67 @@ h3 {
 #rain {
 	width: 400px;
 	margin: 4rem 2rem 1rem -2rem;
+}
+
+@media (min-width: 700px) {
+	/* more css for larger screens */
+
+	.textbubble {
+		margin-left: 1.5rem;
+		width: 37%;
+		margin-top: 4rem;
+	}
+
+	.triangle {
+		margin-left: 0.5rem;
+		top: 134px;
+		left: 44%;
+	}
+	h1 {
+		font-size: 1.5rem;
+	}
+
+	header p {
+		font-size: 0.95rem;
+	}
+	.my-face {
+		width: 20%;
+		height: 20%;
+	}
+
+	.slice-containter {
+		display: flex;
+		justify-content: center;
+		flex-wrap: nowrap;
+		padding: 0rem;
+	}
+
+	.slices {
+		width: 90%;
+		margin: 0.5rem 1.5rem;
+	}
+}
+
+@media (min-width: 1000px) {
+	.triangle {
+		margin-left: 1.56rem;
+	}
+	.mobile-text-view {
+		display: initial;
+	}
+
+	.posts {
+		height: 10rem;
+		background-color: rgba(255, 255, 255, 1);
+	}
+
+	#react {
+		background-position-y: 73%;
+	}
+}
+
+@media (min-width: 1080px) {
+	.triangle {
+		margin-left: 1.75rem;
+	}
 }
