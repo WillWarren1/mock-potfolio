@@ -72,7 +72,7 @@ h1 {
 }
 
 .slices {
-	margin: 1rem 0.25rem;
+	margin: 0.5rem 0.25rem;
 }
 
 article {
@@ -94,7 +94,7 @@ article {
 	background-image: url(/images/code.png);
 	display: flex;
 	justify-content: flex-end;
-	align-content: flex-end;
+	/* align-content: flex-end; */
 	background-position-y: 53%;
 	background-position-x: 45%;
 	margin: 1.5rem 1rem;
@@ -179,6 +179,8 @@ footer p {
 	display: flex;
 	justify-content: flex-start;
 	flex-wrap: column;
+	justify-content: center;
+	flex-direction: column;
 }
 
 .unslice {
@@ -192,17 +194,23 @@ footer p {
 	margin: 1rem;
 	padding: 0rem 1rem;
 	border-radius: 3px;
+	display: flex;
 }
 
 .flexy {
 	display: flex;
 	justify-content: center;
+	padding: 5% 15%;
 }
 h3 {
 	font-size: 2rem;
 	padding: none;
 	margin: 1rem;
 	text-align: center;
+}
+
+#bomb {
+	margin: 4rem 2rem 1rem 0rem;
 }
 
 #one-list {
@@ -212,7 +220,13 @@ h3 {
 
 #rain {
 	width: 400px;
-	margin: 4rem 2rem 1rem -2rem;
+	margin: 4rem 2rem 1rem 2rem;
+}
+
+.sensei {
+	width: 300px;
+	height: 300px;
+	margin: 4rem 2rem 1rem 2rem;
 }
 
 @media (min-width: 700px) {
@@ -252,6 +266,19 @@ h3 {
 		width: 90%;
 		margin: 0.5rem 1.5rem;
 	}
+
+	.posts {
+		height: 10rem;
+		background-color: rgba(255, 255, 255, 1);
+	}
+
+	.mobile-text-view {
+		display: initial;
+	}
+
+	#react {
+		background-position-y: 85%;
+	}
 }
 
 @media (min-width: 1000px) {
@@ -275,5 +302,20 @@ h3 {
 @media (min-width: 1080px) {
 	.triangle {
 		margin-left: 1.75rem;
+	}
+
+	.slice {
+		margin: 3rem;
+	}
+
+	.posts {
+		margin-top: 7rem;
+	}
+
+	#react {
+		background-position-y: 65%;
+	}
+	#fizz {
+		background-size: cover;
 	}
 }
