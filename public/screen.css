@@ -110,7 +110,7 @@ article {
 	display: flex;
 	flex-direction: column;
 	margin-top: 4rem;
-	margin-bottom: 0rem;
+	margin-bottom: -1.2rem;
 }
 
 .mobile-text-view {
@@ -135,10 +135,11 @@ h2 {
 
 .readmore {
 	background-color: rgb(20, 131, 210);
-	margin: -0.5rem 1rem -1rem 4rem;
+	margin: -0.5rem 1rem -700000000rem 4rem; /* this was working perfectly fine until i changed something completely unrelated on anothr page. I altered the width and height of the banner images on react.html and fizz.html and did media queries to make it responsive, that is the ONLY thing i changes and suddenly these buttons no longer go beneath their parent with a negative margin. I tried adjusting them and went back to the fizz and react pages and the size of the banner is all messed up again. I give up. */
 	border: none;
 	color: white;
 	border-radius: 3px;
+	padding: none;
 }
 
 footer {
@@ -172,7 +173,7 @@ footer p {
 	background-color: rgba(255, 255, 255, 0.75);
 	width: 75px;
 	border-radius: 50%;
-	margin: 1rem 1rem 0rem 1rem;
+	margin: 1rem 1rem 0rem -2rem;
 }
 
 .clickthrough-page {
@@ -190,7 +191,7 @@ footer p {
 
 .image-clickthrough {
 	background-color: rgba(255, 255, 255, 0.85);
-	width: 85%;
+	width: 95%;
 	margin: 1rem;
 	padding: 0rem 1rem;
 	border-radius: 3px;
@@ -200,7 +201,10 @@ footer p {
 .flexy {
 	display: flex;
 	justify-content: center;
+	flex-wrap: wrap;
 	padding: 5% 15%;
+	margin: 2rem;
+	width: 60%;
 }
 h3 {
 	font-size: 2rem;
@@ -210,23 +214,33 @@ h3 {
 }
 
 #bomb {
+	width: 300px;
 	margin: 4rem 2rem 1rem 0rem;
 }
 
 #one-list {
 	width: 300px;
+	height: 300px;
 	margin: 4rem 2rem 1rem 0rem;
 }
 
 #rain {
-	width: 400px;
-	margin: 4rem 2rem 1rem 2rem;
+	width: 300px;
+	height: 300px;
+	margin: 4rem 1rem 1rem 0.5rem;
 }
 
 .sensei {
 	width: 300px;
 	height: 300px;
 	margin: 4rem 2rem 1rem 2rem;
+}
+
+.clickthrough-banner {
+	width: 25rem;
+	height: 10rem;
+	margin: 3rem 2rem -2rem 1rem;
+	padding: 0;
 }
 
 @media (min-width: 700px) {
@@ -279,6 +293,12 @@ h3 {
 	#react {
 		background-position-y: 85%;
 	}
+	.clickthrough-banner {
+		width: 60rem;
+		height: 10rem;
+		margin: 3rem 2rem -2rem 1rem;
+		padding: 0;
+	}
 }
 
 @media (min-width: 1000px) {
@@ -296,6 +316,12 @@ h3 {
 
 	#react {
 		background-position-y: 73%;
+	}
+	.clickthrough-banner {
+		width: 62rem;
+		height: 10rem;
+		margin: 3rem 2rem -2rem 1rem;
+		padding: 0;
 	}
 }
 
@@ -317,5 +343,11 @@ h3 {
 	}
 	#fizz {
 		background-size: cover;
+	}
+	.clickthrough-banner {
+		width: 75.4rem;
+		height: 15rem;
+		margin: 3rem 2rem -2rem 1rem;
+		padding: 0;
 	}
 }
